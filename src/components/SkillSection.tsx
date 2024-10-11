@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../context/language-context";
 
 interface Skill {
   title: string;
@@ -44,6 +45,8 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
     }
   };
 
+  const { language } = useLanguage();
+
   return (
     <article
       className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
@@ -57,7 +60,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
       >
         <p className="font-black text-4xl">
           <span className="text-[--orange]">&lt;</span>
-          {skillsData[0].skillsTitle}
+            {language === "DE" ? skillsData[0].skillsTitleDe : skillsData[0].skillsTitle}
           <span className="text-[--orange]">/&gt;</span>
         </p>
       </div>

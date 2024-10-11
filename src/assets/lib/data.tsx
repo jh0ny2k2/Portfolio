@@ -37,31 +37,41 @@ import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
+
+import laravel from "../../assets/icons/laravel.svg";
+import angular from "../../assets/icons/angular.svg";
+import mysql from "../../assets/icons/mysql.svg";
+import python from "../../assets/icons/python.svg";
+import java from "../../assets/icons/java.svg";
+import photoshop from "../../assets/icons/photoshop.svg";
+import drupal from "../../assets/icons/drupal.svg";
+
+
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    de: "Hi, I'm Jhonathan",
+    en: "Hola, Soy Jhonathan",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Web Developer",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "I'm Jhonathan, a web developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's create digital solutions together and shape the future!",
+    en: "Soy Jhonathan, un desarrollador Web, con el objetivo de avanzar en mi carrera y participar en proyectos inspiradores. Aquí presento mi trabajo y mi pasión por el desarrollo web. ¡Creemos juntos soluciones digitales y moldeemos el futuro!",
   },
   buttons: [
     {
-      name: "Contact",
+      name: "Contactame",
       label: {
-        de: "Kontaktiere mich",
-        en: "Contact me",
+        de: "Contact Me",
+        en: "Contactame",
       },
       icon: FiMail,
       color: "main-btn",
     },
     {
-      name: "Projects",
+      name: "Projectos",
       label: {
-        de: "Meine Projekte",
-        en: "My Projects",
+        de: "My Projects",
+        en: "Mis Proyectos",
       },
       icon: FiGithub,
       color: "secondary-btn",
@@ -169,14 +179,15 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
-    en: "More Projects on Github",
+    de: "More Projects on Github",
+    en: "Más Proyectos en Github",
   },
 } as const;
 
 export const skillsDataWeb = [
   {
-    skillsTitle: "WebDevelopment",
+    skillsTitle: "Desarrollo",
+    skillsTitleDe: "Development",
     skills: [
       {
         title: "HTML",
@@ -197,9 +208,9 @@ export const skillsDataWeb = [
         color: "#F7DF1E",
       },
       {
-        title: "TypeScript",
+        title: "MySql",
         hash: "#TypeScript",
-        icon: typescripticon,
+        icon: mysql,
         color: "#007ACC",
       },
       {
@@ -209,9 +220,9 @@ export const skillsDataWeb = [
         color: "#61DAFB",
       },
       {
-        title: "Next.js",
+        title: "Laravel",
         hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
+        icon: laravel,
         color: ["#000000", "#FFFFFF"],
       },
       {
@@ -233,21 +244,21 @@ export const skillsDataWeb = [
         color: "#449C45",
       },
       {
-        title: "Vue.js",
+        title: "Java",
         hash: "#Vue.js",
-        icon: vuejsicon,
+        icon: java,
         color: "#4FC08D",
       },
       {
-        title: "Express",
+        title: "Python",
         hash: "#Express",
-        icon: [expressicon, expressiconwhite],
+        icon: python,
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "SASS/SCSS",
+        title: "Angular",
         hash: "#SASS/SCSS",
-        icon: sassscssicon,
+        icon: angular,
         color: "#CC6699",
       },
     ],
@@ -256,13 +267,14 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Diseño",
+    skillsTitleDe: "Design",
     skills: [
       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
       {
-        title: "Adobe XD",
+        title: "Adobe Photoshop",
         hash: "#Adobe XD",
-        icon: adobexdicon,
+        icon: photoshop,
         color: "#FF61F6",
       },
       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
@@ -273,6 +285,7 @@ export const skillsDataDesign = [
 export const skillsDataCMS = [
   {
     skillsTitle: "CMS",
+    skillsTitleDe: "CMS",
     skills: [
       {
         title: "WordPress",
@@ -287,9 +300,9 @@ export const skillsDataCMS = [
         color: "#7AB55C",
       },
       {
-        title: "Webflow",
+        title: "Drupal",
         hash: "#Webflow",
-        icon: webflowicon,
+        icon: drupal,
         color: "#4353FF",
       },
     ],
@@ -297,11 +310,11 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { de: "Home", en: "Inicio", hash: "#home", icon: GoHome },
+  { de: "Skills", en: "Habilidades", hash: "#skills", icon: GoStack },
+  { de: "Projects", en: "Proyectos", hash: "#projects", icon: GoProject },
+  { de: "About me", en: "Sobre Mi", hash: "#about-me", icon: GoPerson },
+  { de: "Contact", en: "Contacto", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
@@ -310,23 +323,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:developerjhony@gmail.com",
+  text: "developerjhony@gmail.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/jhonathan-chaves-manzano-825b32215/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/jh0ny2k2",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:developerjhony@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -334,19 +347,19 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
+    de: '"It s not at all important to get it right the first time. It s vitally important to get it right the last time."',
+    en: `"No es nada importante hacerlo bien la primera vez. Es de vital importancia hacerlo bien la última vez."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '"The web is like a canvas, and code is the paint. Create your masterpiece."',
+    en: `"La web es como un lienzo y el código es la pintura. Crea tu obra maestra."`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
-  title_EN: "About me",
+  title: "About me",
+  title_EN: "Sobre Mi",
   description: "Ein paar Codeschnippsel über mich",
   description_EN: "A few code snippets about me",
   paragraphs_DE: [
@@ -393,8 +406,8 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
-    en: "Contact",
+    de: "Contact",
+    en: "Contacto",
   },
   description: {
     de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
@@ -402,23 +415,23 @@ export const contactData = {
   },
   inputfields: [
     {
-      name: "name",
+      name: "Nombre",
       placeholder: {
-        de: "Dein Name",
-        en: "Your Name",
+        de: "Your Name",
+        en: "Tu Nombre",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
-        en: "Please fill in your name",
+        de: "Please fill in your name",
+        en: "Por Favor, Inserta tu Nombre",
       },
       pattern: "{2}",
     },
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
-        en: "Your E-Mail",
+        de: "Your E-Mail",
+        en: "Tu Email",
       },
       type: "email",
       validation: {
