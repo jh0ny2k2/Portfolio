@@ -73,11 +73,11 @@ const ProjectSlider: React.FC = () => {
             >
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]">&lt;</span>
-                {language === "DE" ? "Projekte" : "Projects"}
+                {language === "DE" ? "Projects" : "Proyectos"}
                 <span className="text-[--orange]">/&gt;</span>
               </p>
               <h2 className="text-[--white] mb-16">
-                {language === "DE" ? "Meine Projekte" : "My Projects"}
+                {language === "DE" ? "My Projects" : "Mis Proyectos"}
               </h2>
             </motion.div>
             <Swiper
@@ -110,7 +110,7 @@ const ProjectSlider: React.FC = () => {
                     </p>
                     <div className="technologies">
                       <h3>
-                        {language === "DE" ? "Technologien" : "Technologies"}
+                        {language === "DE" ? "Technologies" : "Tecnologías"}
                       </h3>
                       <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(

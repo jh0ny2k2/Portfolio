@@ -1,18 +1,13 @@
-import adobexdicon from "../../assets/icons/adobexdicon.svg";
 import canvaicon from "../../assets/icons/canvaicon.svg";
+import aws from "../../assets/icons/aws.svg";
 import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
-import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
-import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
-import vuejsicon from "../../assets/icons/vueicon.svg";
-import expressicon from "../../assets/icons/expressicon.svg";
-import sassscssicon from "../../assets/icons/sassicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
@@ -22,7 +17,6 @@ import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
@@ -30,7 +24,6 @@ import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
-import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
@@ -82,25 +75,25 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Resmoke",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "Resmoke is an innovative web application dedicated to the buying and selling of second-hand products, designed to offer an efficient, safe and focused experience on the needs of users.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "Resmoke es una innovadora aplicación web dedicada a la compra y venta de productos de segunda mano, diseñada para ofrecer una experiencia eficiente, segura y centrada en las necesidades de los usuarios.",
     technologies: [
       { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
+      { name: "Tailwind", icon: tailwindcssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
+      { name: "Laravel", icon: laravel },
       { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
+      { name: "AWS", icon: aws },
+      { name: "MySql", icon: mysql },
       { name: "Trello", icon: trelloicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "http://resmoke.es",
+    githuburl: "https://github.com/jh0ny2k2/Resmoke",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -111,29 +104,27 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "Invitación Boda",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "An innovative digital wedding invitation. Through this platform, you can find all the necessary information about the event and even confirm your attendance.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Una innovadora invitación digital para bodas. A través de esta plataforma, podrás encontrar toda la información necesaria sobre el evento e incluso confirmar tu asistencia.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
+      { name: "Tailwind", icon: tailwindcssicon },
+      { name: "Laravel", icon: laravel },
+      { name: "MySql", icon: mysql },
+      { name: "Photoshop", icon: photoshop },
+      // { name: "Node.js", icon: nodejsicon },
       { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      // { name: "Render", icon: rendericon },
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/jh0ny2k2/Boda",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -144,23 +135,23 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Web La Mojonera",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "Redesign of the Website for the La Mojonera City Council. This project focuses on creating a more intuitive and accessible platform, enhancing access to information and municipal services.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "Rediseño de la Página Web del Ayuntamiento de La Mojonera. Este proyecto se enfoca en crear una plataforma más intuitiva y accesible, mejorando el acceso a información y servicios municipales.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
+      // { name: "React", icon: reacticon },
+      // { name: "JWT & Bcrypt", icon: jwticon },
+      // { name: "Axios", icon: axiosicon },
+      // { name: "MongoDB", icon: mongodbicon },
+      // { name: "Express", icon: expressiconwhite },
+      { name: "Tailwind", icon: tailwindcssicon },
       { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      // { name: "Render", icon: rendericon },
       { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
@@ -410,12 +401,12 @@ export const contactData = {
     en: "Contacto",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
-    en: "Write me a message and I will get back to you.",
+    de: "Write me a message and I will get back to you.",
+    en: "Escríbeme un mensaje y me pondré en contacto contigo.",
   },
   inputfields: [
     {
-      name: "Nombre",
+      name: "name",
       placeholder: {
         de: "Your Name",
         en: "Tu Nombre",
@@ -435,42 +426,42 @@ export const contactData = {
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
-        en: "Please fill in your email",
+        de: "Please fill in your email",
+        en: "Por Favor, Inserta tu Email",
       },
       pattern: "[@]{4}",
     },
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
-        en: "Your Subject",
+        de: "Your Subject",
+        en: "Tu Asunto",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
-        en: "Please fill in your subject",
+        de: "Please fill in your subject",
+        en: "Por Favor, Inserta tu Asunto",
       },
       pattern: "{10}",
     },
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
-      en: "Your Message",
+      de: "Your Message",
+      en: "Tu Mensaje",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
-      en: "Please fill in your message",
+      de: "Please fill in your message",
+      en: "Por favor completa tu mensaje",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
-      en: "Send",
+      de: "Send",
+      en: "Enviar",
     },
   },
   icon: FiMail,
@@ -482,39 +473,39 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      de: "I agree that Alpay may use my personal data (name and e-mail address) to contact me. ",
+      en: "Acepto que Alpay pueda utilizar mis datos personales (nombre y dirección de correo electrónico) para contactarme.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
-      en: "By submitting this request, you acknowledge that you have read the Private Policy",
+      de: "By submitting this request, you acknowledge that you have read the Private Policy",
+      en: "Al enviar esta solicitud, usted reconoce que ha leído la Política de Privacidad",
     },
   },
 } as const;
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
-    en: "🦄 The live demo will open shortly. Starting servers...",
+    de: "Currently the project is not active or in process.",
+    en: "Actualmente el proyecto no está activo o en proceso..",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
-    en: "🦄 Thank you for your email. I will get back to you as soon as possible",
+    de: "Thank you for your email. I will get back to you as soon as possible",
+    en: "Gracias por tu correo electrónico. Me comunicaré contigo lo antes posible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
-    en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
+    de: "Unfortunately the sending of your email did not work. Please try again later",
+    en: "Lamentablemente el envío de su correo electrónico no funcionó. Por favor inténtalo de nuevo más tarde.",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
-    en: "Please fill in your name",
+    de: "Please fill in your name",
+    en: "Por favor escribe tu nombre",
   },
 } as const;
 
 export const buttonLabels = {
   language: {
-    de: "DE",
-    en: "EN",
+    de: "EN",
+    en: "ES",
   },
 } as const;
 

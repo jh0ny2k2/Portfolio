@@ -122,25 +122,25 @@ const Contact: React.FC = () => {
   const codeSnippet = `
 import  { useState } from "react";
 
-// 🌈 Spreading Stardust: 
-// Crafting Cosmic Email 🌌
+// Difundiendo polvo de estrellas: 
+// Creando un correo electrónico cósmico 
 
 const [sender, setSender] = "${name}${
     lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
-  }🚀";
+  }";
 const [recipient, setRecipient] = "${email}${
     lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
-  }📧";
+  }";
 const [subject, setSubject] = \n"${subject}${
     lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
-  }✨";
+  }";
 const [message, setMessage] = 
-\`Hello, intrepid traveler! 👋\n
-Across the cosmos, a message for you:\n
+\`¡Hola, intrépido viajero! 👋\n
+A través del cosmos, un mensaje para ti:\n
 "${wordWrap(message, 40, " ")}${
     lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
   }"\n
-Wishing you stardust dreams,\n
+Te deseo sueños de polvo de estrellas,\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
 

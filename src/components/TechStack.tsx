@@ -44,13 +44,14 @@ const TechStack: React.FC = () => {
             }}
           >
             <p className="font-black mb-6">
-              <span className="text-[--orange]">&lt;</span>Skills
+              <span className="text-[--orange]">&lt;</span>
+              {language === "DE" ? "Skills" : "Habilidades"}
               <span className="text-[--orange]">/&gt;</span>
             </p>
             <h2>
               {language === "DE"
-                ? "Meine Techstack und Skills"
-                : "My TechStack and Skills"}
+                ? "My Skills"
+                : "Mis habilidades"}
             </h2>
           </motion.div>
         </div>
